@@ -1,6 +1,7 @@
 body{
 
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 /* header related style  */
@@ -266,4 +267,54 @@ footer{
     background-color: #FFF;
     border: 0;
     width: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+/* mobile device  */
+
+@media screen  and (max-width:576px){
+    .skills-container,.resume-container, .about-info-container,.banner,nav{
+        flex-direction: column;
+    }
+    #what-i-do-description {
+        padding: 30px 30px;
+    }
+    
+    footer{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .footer-column{
+
+        width: 100%;
+    }
+    .contact input[type="text"], input[type="email"], textarea {
+        width: 80%;
+    }
+    .banner .profile-picture{
+
+        width: 100%;
+        
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    
+    .skills-container,.resume-container, .about-info-container,.banner,nav{
+        flex-direction: column;
+    }
+    .what-i-do{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banner .profile-picture{
+
+        width: 100%;
+        
+    }
 }
